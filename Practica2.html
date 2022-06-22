@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2 | Javascript</title>
+</head>
+<body>
+     <button onclick="evento();">Iniciar la validación</button>
+     <p>Pedirle al usuario coloque un string y contar cuantas veces aperece una letra dentro del mensaje: nota tu decides la letra</p>
+     <p>solamente utilices Javascript con un boton</p>
+     
+     <script>
+        function evento(){
+        let Mensaje = prompt("Ingresa el texto a evaluar");
+        let Letra = 'd';
+        let contador = 0;
+         for(let i = 0; i < Mensaje.length; i++){
+             if(Mensaje.charAt(i)===Letra){
+                  contador++;
+             }
+         }
+         document.write("El mensaje que diste contiene la letra: "+ Letra + " Se repite: "+ contador + " En el mensaje");
+        } 
+    </script>
+</body>
+</html>
